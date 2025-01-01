@@ -34,6 +34,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	--gray800: var(--black-olive);
 	--gray900: var(--eerie-black);
 }
+
 body {
     background-color: var(--gray100);
     color: var(--gray900);
@@ -120,13 +121,6 @@ body#collection #wrapper h2 {
 	margin-bottom: 1em;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-	body#post article {
-		font-size: 1rem;
-	}
-}
-
 /* Footer styles */
 .post-footer {
     font-family: 'Alegreya Sans', sans-serif;
@@ -171,4 +165,15 @@ body footer nav a.home:visited,
 body footer nav a.home:active,
 body footer nav a.home:focus {
 	text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+	body#post article {
+		font-size: 1rem;
+	}
+	article, body#post header {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 }
