@@ -1,3 +1,16 @@
+/*
+Theme for WriteFreely
+
+Copyright (c) 2025 Gabriele Mearelli. All rights reserved.
+Fediverse: @game@bologna.one https://bologna.one/@game
+
+This project is licensed under the MIT License. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+- The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 :root {
 	--burgundy: hsla(348, 77%, 33%, 1); /* Rosso sito comune Bologna */
@@ -73,7 +86,7 @@ body#post article p:has(img) {
 	font-style: italic;
 }
 
-body#post article time.dt-published {
+article time.dt-published {
 	font-family: 'Alegreya Sans', sans-serif;
 	color: var(--gray600);
 	font-size: 1rem;
@@ -83,6 +96,25 @@ hr {
 	color: var(--gray600);
 }
 
+/* Home page */
+header p.description {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 1.2rem;
+	color: var(--gray600);
+	text-wrap: balance;
+}
+body#collection article {
+	max-width: 100%;
+}
+body#collection a.read-more {
+	font-family: 'Alegreya Sans', sans-serif;
+	color: var(--gray600);
+}
+body#collection #wrapper h2 {
+	margin-bottom: 1em;
+}
+
+/* Responsive */
 @media (max-width: 600px) {
 	body#post article {
 		font-size: 1rem;
