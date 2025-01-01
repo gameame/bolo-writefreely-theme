@@ -52,9 +52,14 @@ h1 {
 }
 h2, h3 {
 	font-family: 'Alegreya Sans', sans-serif;
-	font-weight: 800;
 	color: var(--gray800);
 	text-wrap: balance;
+}
+h2 {
+	font-weight: 800;
+}
+h3 {
+	font-weight: 600;
 }
 a {
     color: var(--accent);
