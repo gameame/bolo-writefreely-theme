@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+:root {
+	--burgundy: hsla(348, 77%, 33%, 1); /* Rosso sito comune Bologna */
+	--alabaster: hsla(42, 25%, 92%, 1);
+	--timberwolf: hsla(42, 11%, 82%, 1);
+	--silver: hsla(42, 7%, 72%, 1);
+	--battleship-gray: hsla(42, 5%, 62%, 1);
+	--battleship-gray-2: hsla(44, 4%, 51%, 1);
+	--dim-gray: hsla(44, 5%, 41%, 1);
+	--walnut-brown: hsla(45, 8%, 31%, 1);
+	--black-olive: hsla(45, 12%, 20%, 1);
+	--eerie-black: hsla(42, 25%, 10%, 1);
+	--accent: var(--burgundy);
+	--gray100: var(--alabaster);
+	--gray200: var(--timberwolf);
+	--gray300: var(--silver);
+	--gray400: var(--battleship-gray);
+	--gray500: var(--battleship-gray-2);
+	--gray600: var(--dim-gray);
+	--gray700: var(--walnut-brown);
+	--gray800: var(--black-olive);
+	--gray900: var(--eerie-black);
+}
+body {
+    background-color: var(--gray100);
+    color: var(--gray900);
+	border-top: 5px solid var(--accent);
+}
+.font.norm, body#collection article.norm, body#post article.norm, body#subpage article.norm, input#title.norm, pre.norm, span.norm, textarea.norm {
+	font-family: 'Alegreya', serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}	
+h1 {
+	font-family: 'Alegreya', serif;
+	font-weight: 800;
+	color: var(--accent);
+}
+h2, h3 {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 800;
+	color: var(--gray800);
+	text-wrap: balance;
+}
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+body h1 a, body h1 a:hover {
+    color: var(--accent);
+}
+img {
+    border-radius: 4px;
+	box-shadow: 0 1px 2px var(--gray500);
+	max-height: 40rem; /* Same as container width */
+	/* center image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+}
+/* Paragraph containing an image should be smaller and lighter */
+body#post article p:has(img) {
+	font-size: 1rem;
+	color: var(--gray600);
+	/* center text */
+	display: block;
+	text-align: center;
+	font-style: italic;
+}
+
+body#post article time.dt-published {
+	font-family: 'Alegreya Sans', sans-serif;
+	color: var(--gray600);
+	font-size: 1rem;
+	font-variant: small-caps;
+}
+hr {
+	color: var(--gray600);
+}
+
+@media (max-width: 600px) {
+	body#post article {
+		font-size: 1rem;
+	}
+}
